@@ -1,4 +1,10 @@
 {
   "item.soulmatemod.gignomethyst": "Gignomethyst Crystal",
-  "item.soulmatemod.raw_gignomethyst": "Dirty Gignomethyst"
+  "item.soulmatemod.raw_gignomethyst": "Dirty Gignomethyst",
+
+
+
+
+  "block.soulmatemod.raw_gignomethyst_block": "Block of Dirty Gignomethyst",
+  "block.soulmatemod.gignomethyst_block": "Block of Gignomethyst"
 }

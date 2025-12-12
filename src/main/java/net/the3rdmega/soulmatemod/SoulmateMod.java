@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.the3rdmega.soulmatemod.block.ModBlocks;
 import net.the3rdmega.soulmatemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -50,6 +51,7 @@ public class SoulmateMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -72,6 +74,11 @@ public class SoulmateMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GIGNOMETHYST);
             event.accept(ModItems.RAW_GIGNOMETHYST);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.GIGNOMETHYST_BLOCK);
+            event.accept(ModBlocks.RAW_GIGNOMETHYST_BLOCK);
         }
 
     }

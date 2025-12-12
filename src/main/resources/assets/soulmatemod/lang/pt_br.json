@@ -1,4 +1,9 @@
 {
   "item.soulmatemod.gignomethyst": "Cristal de Gignoametista",
-  "item.soulmatemod.raw_gignomethyst": "Gignoametista Suja"
+  "item.soulmatemod.raw_gignomethyst": "Gignoametista Suja",
+
+
+
+  "block.soulmatemod.raw_gignomethyst_block": "Bloco de Gignoametista Suja",
+  "block.soulmatemod.gignomethyst_block": "Bloco de Gignoametista"
 }
