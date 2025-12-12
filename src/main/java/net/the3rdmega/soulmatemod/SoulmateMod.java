@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.the3rdmega.soulmatemod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -48,6 +49,10 @@ public class SoulmateMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -61,8 +66,13 @@ public class SoulmateMod
     }
 
     // Add the example block item to the building blocks tab
+    // Adiciona Itens ou blocos para a aba do inventário criativo
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.GIGNOMETHYST);
+            event.accept(ModItems.RAW_GIGNOMETHYST);
+        }
 
     }
 
