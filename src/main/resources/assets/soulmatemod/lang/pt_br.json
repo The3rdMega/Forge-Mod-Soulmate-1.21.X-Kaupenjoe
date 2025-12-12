@@ -5,5 +5,10 @@
 
 
   "block.soulmatemod.raw_gignomethyst_block": "Bloco de Gignoametista Suja",
-  "block.soulmatemod.gignomethyst_block": "Bloco de Gignoametista"
+  "block.soulmatemod.gignomethyst_block": "Bloco de Gignoametista",
+
+
+  "creativetab.soulmatemod.gignomethyst_items": "Itens de Gignoametista",
+  "creativetab.soulmatemod.gignomethyst_blocks": "Blocos de Gignoametista"
+
 }

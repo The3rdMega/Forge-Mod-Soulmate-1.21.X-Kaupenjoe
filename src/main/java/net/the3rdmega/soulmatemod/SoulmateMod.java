@@ -28,6 +28,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.the3rdmega.soulmatemod.block.ModBlocks;
+import net.the3rdmega.soulmatemod.item.ModCreativeModeTabs;
 import net.the3rdmega.soulmatemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -50,8 +51,11 @@ public class SoulmateMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus); // Registra a aba do criativo
+
+        ModItems.register(modEventBus); // Registra os Itens do mod
+        ModBlocks.register(modEventBus); // Registra os Blocos do mod
+
 
 
 

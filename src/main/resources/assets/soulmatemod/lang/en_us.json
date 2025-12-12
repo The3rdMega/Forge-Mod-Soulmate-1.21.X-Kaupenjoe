@@ -6,5 +6,9 @@
 
 
   "block.soulmatemod.raw_gignomethyst_block": "Block of Dirty Gignomethyst",
-  "block.soulmatemod.gignomethyst_block": "Block of Gignomethyst"
+  "block.soulmatemod.gignomethyst_block": "Block of Gignomethyst",
+
+  "creativetab.soulmatemod.gignomethyst_items": "Gignomethyst Items",
+  "creativetab.soulmatemod.gignomethyst_blocks": "Gignomethyst Blocks"
+
 }
